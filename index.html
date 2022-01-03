@@ -1,0 +1,2641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZOO online</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="common.css" rel="stylesheet" />
+    <link href="landing/index.css" rel="stylesheet" />
+    <link href="media.css" rel="stylesheet" />
+  </head>
+  <body>
+    <input class="theme-toggle__checkbox" id="theme-toggle" type="checkbox" />
+    <div class="container container_landing">
+      <header class="header section">
+        <div class="section__content">
+          <h1 class="h1">Online Zoo</h1>
+          <div class="logo">
+            <a
+              class="logo__link"
+              href="https://rolling-scopes-school.github.io/dashaostrikova-JSFE2021Q1/online-zoo/"
+              ><span>zoo</span>online
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-items">
+              <li class="header__nav-item active">
+                <a
+                  class="header__nav-link"
+                  href="https://rolling-scopes-school.github.io/dashaostrikova-JSFE2021Q1/online-zoo/"
+                  >About</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="./zoos/panda.html">Zoos</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="map/map.html">Map</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#contact-us">Contact Us</a>
+              </li>
+              <li class="header__nav-item">
+                <a
+                  class="header__nav-link"
+                  href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1"
+                  >Design</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu">
+            <div class="theme-toggle">
+              <label class="theme-toggle__label" for="theme-toggle">
+                <span class="theme-toggle__checkmark"></span>
+              </label>
+            </div>
+            <div class="hamburger">
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line hamburger-line_bottom"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="sectiin section_main main">
+        <div class="section__content">
+          <ul class="social social_vert main__social">
+            <li class="social__item">
+              <a
+                class="social__link"
+                target="_blank"
+                href="https://www.instagram.com/"
+              >
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.75 0H6.25C2.79875 0 0 2.79875 0 6.25V13.75C0 17.2013 2.79875 20 6.25 20H13.75C17.2013 20 20 17.2013 20 13.75V6.25C20 2.79875 17.2013 0 13.75 0ZM18.125 13.75C18.125 16.1625 16.1625 18.125 13.75 18.125H6.25C3.8375 18.125 1.875 16.1625 1.875 13.75V6.25C1.875 3.8375 3.8375 1.875 6.25 1.875H13.75C16.1625 1.875 18.125 3.8375 18.125 6.25V13.75Z"
+                  />
+                  <path
+                    d="M10 5C7.23875 5 5 7.23875 5 10C5 12.7613 7.23875 15 10 15C12.7613 15 15 12.7613 15 10C15 7.23875 12.7613 5 10 5ZM10 13.125C8.2775 13.125 6.875 11.7225 6.875 10C6.875 8.27625 8.2775 6.875 10 6.875C11.7225 6.875 13.125 8.27625 13.125 10C13.125 11.7225 11.7225 13.125 10 13.125Z"
+                  />
+                  <path
+                    d="M15.3752 5.29148C15.7432 5.29148 16.0415 4.99319 16.0415 4.62523C16.0415 4.25727 15.7432 3.95898 15.3752 3.95898C15.0073 3.95898 14.709 4.25727 14.709 4.62523C14.709 4.99319 15.0073 5.29148 15.3752 5.29148Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                target="_blank"
+                href="https://twitter.com/"
+              >
+                <svg viewBox="0 0 20 17" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 1.92375C19.2563 2.25 18.4637 2.46625 17.6375 2.57125C18.4875 2.06375 19.1363 1.26625 19.4412 0.305C18.6488 0.7775 17.7738 1.11125 16.8412 1.2975C16.0887 0.49625 15.0162 0 13.8462 0C11.5763 0 9.74875 1.8425 9.74875 4.10125C9.74875 4.42625 9.77625 4.73875 9.84375 5.03625C6.435 4.87 3.41875 3.23625 1.3925 0.7475C1.03875 1.36125 0.83125 2.06375 0.83125 2.82C0.83125 4.24 1.5625 5.49875 2.6525 6.2275C1.99375 6.215 1.3475 6.02375 0.8 5.7225C0.8 5.735 0.8 5.75125 0.8 5.7675C0.8 7.76 2.22125 9.415 4.085 9.79625C3.75125 9.8875 3.3875 9.93125 3.01 9.93125C2.7475 9.93125 2.4825 9.91625 2.23375 9.86125C2.765 11.485 4.2725 12.6788 6.065 12.7175C4.67 13.8088 2.89875 14.4662 0.98125 14.4662C0.645 14.4662 0.3225 14.4513 0 14.41C1.81625 15.5813 3.96875 16.25 6.29 16.25C13.835 16.25 17.96 10 17.96 4.5825C17.96 4.40125 17.9538 4.22625 17.945 4.0525C18.7588 3.475 19.4425 2.75375 20 1.92375Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                target="_blank"
+                href="https://www.youtube.com/"
+              >
+                <svg viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.15 1.575C18.6075 0.61 18.0188 0.4325 16.82 0.365C15.6225 0.28375 12.6112 0.25 10.0025 0.25C7.38875 0.25 4.37625 0.28375 3.18 0.36375C1.98375 0.4325 1.39375 0.60875 0.84625 1.575C0.2875 2.53875 0 4.19875 0 7.12125C0 7.12375 0 7.125 0 7.125C0 7.1275 0 7.12875 0 7.12875V7.13125C0 10.0413 0.2875 11.7137 0.84625 12.6675C1.39375 13.6325 1.9825 13.8075 3.17875 13.8888C4.37625 13.9588 7.38875 14 10.0025 14C12.6112 14 15.6225 13.9587 16.8212 13.89C18.02 13.8087 18.6087 13.6338 19.1513 12.6688C19.715 11.715 20 10.0425 20 7.1325C20 7.1325 20 7.12875 20 7.12625C20 7.12625 20 7.12375 20 7.1225C20 4.19875 19.715 2.53875 19.15 1.575ZM7.5 10.875V3.375L13.75 7.125L7.5 10.875Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" target="_blank" href="https://vk.com/">
+                <svg viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.8217 10.1784C19.768 10.0883 19.4355 9.36579 17.8353 7.88068C16.1602 6.32557 16.3852 6.57809 18.4029 3.88914C19.6317 2.25152 20.123 1.25145 19.9692 0.823916C19.823 0.416387 18.9192 0.523894 18.9192 0.523894L15.9139 0.541396C15.9139 0.541396 15.6914 0.511393 15.5252 0.610151C15.3639 0.707658 15.2601 0.932674 15.2601 0.932674C15.2601 0.932674 14.7839 2.20027 14.1488 3.27785C12.81 5.55176 12.2737 5.67177 12.0549 5.53051C11.5461 5.20174 11.6736 4.20792 11.6736 3.50286C11.6736 1.29895 12.0074 0.380134 11.0223 0.142616C10.6948 0.0638606 10.4548 0.0113567 9.61848 0.00260608C8.54591 -0.00864474 7.63709 0.00635635 7.1233 0.257625C6.78078 0.425137 6.51701 0.798915 6.67827 0.820166C6.87703 0.846418 7.32707 0.941425 7.56583 1.26645C7.87461 1.68523 7.86336 2.6278 7.86336 2.6278C7.86336 2.6278 8.04087 5.22174 7.44958 5.54426C7.0433 5.76553 6.487 5.31425 5.29317 3.25034C4.68187 2.19402 4.21934 1.02518 4.21934 1.02518C4.21934 1.02518 4.13058 0.807665 3.97182 0.691407C3.77931 0.550146 3.50929 0.505143 3.50929 0.505143L0.651577 0.522644C0.651577 0.522644 0.222795 0.535146 0.0652839 0.721409C-0.0747264 0.887671 0.054033 1.2302 0.054033 1.2302C0.054033 1.2302 2.2917 6.46433 4.82438 9.10327C7.1483 11.5222 9.786 11.3634 9.786 11.3634H10.9811C10.9811 11.3634 11.3424 11.3234 11.5261 11.1247C11.6961 10.9422 11.6899 10.5996 11.6899 10.5996C11.6899 10.5996 11.6661 8.99577 12.4112 8.7595C13.145 8.52698 14.0876 10.3096 15.0864 10.9959C15.8414 11.5147 16.4152 11.4009 16.4152 11.4009L19.0867 11.3634C19.0867 11.3634 20.4843 11.2772 19.8217 10.1784Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <div class="main__label">
+            <h2 class="main__title">
+              Watch your favorite <br />
+              animal online
+            </h2>
+            <a
+              class="button button_with-icon main__button button_cursor"
+              href="./zoos/panda.html"
+            >
+              <img
+                class="button__icon"
+                src="./assets/icons/play-icon.svg"
+                alt=""
+              />
+              watch online</a
+            >
+          </div>
+
+          <div class="main-slider" data-init-slide="2">
+            <div class="main-slider__content">
+              <div class="main-slider__bg-line">
+                <div class="bg-point"></div>
+                <div class="bg-point bg-point_1"></div>
+                <div class="bg-point bg-point_2"></div>
+                <div class="bg-point bg-point_3"></div>
+                <div class="bg-point bg-point_4"></div>
+                <div class="bg-point bg-point_5"></div>
+              </div>
+              <div class="main-slider__slide-list">
+                <div title="Eagle" class="main-slider__slide">
+                  <img
+                    class="main-slider__slide-thumb"
+                    src="./assets/images/main-pet-2.png"
+                    alt=""
+                  />
+                  <div class="pet__info">
+                    <p class="pet__description">
+                      Eagle’s name is Grif. He is 5 years old. Grif is
+                      from USA. He loves meat.
+                    </p>
+                    <div class="pet__action">
+                      <a
+                        class="pet__action-item pet__action-item_watch"
+                        href="./zoos/eagle.html"
+                      >
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 32 32"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="15.5" />
+                          <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                        </svg>
+                        watch online
+                      </a>
+                      <a class="pet__action-item" href="/">
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="12" cy="12" r="11.5" stroke="white" />
+                          <path
+                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                          />
+                        </svg>
+                        Donate
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div title="Panda" class="main-slider__slide active">
+                  <img
+                    class="main-slider__slide-thumb"
+                    src="./assets/images/main-pet-1.png"
+                    alt=""
+                  />
+
+                  <div class="pet__info">
+                    <p class="pet__description">
+                      Panda’s name is Bei Bei. He is 2 years old. Bei Bei is
+                      from China. He loves bamboos.
+                    </p>
+                    <div class="pet__action">
+                      <a
+                        class="pet__action-item pet__action-item_watch"
+                        href="./zoos/panda.html"
+                      >
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 32 32"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="15.5" />
+                          <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                        </svg>
+                        watch online
+                      </a>
+                      <a class="pet__action-item" href="/">
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="12" cy="12" r="11.5" stroke="white" />
+                          <path
+                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                          />
+                        </svg>
+                        Donate
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div title="Gorilla" class="main-slider__slide">
+                  <img
+                    class="main-slider__slide-thumb"
+                    src="./assets/images/main-pet-3.png"
+                    alt=""
+                  />
+                  <div class="pet__info">
+                    <p class="pet__description">
+                      Gorilla’s name is Maugli. He is 8 years old. Maugli is
+                      from Africa. He loves bananas.
+                    </p>
+                    <div class="pet__action">
+                      <a
+                        class="pet__action-item pet__action-item_watch"
+                        href="./zoos/gorilla.html"
+                      >
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 32 32"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="15.5" />
+                          <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                        </svg>
+                        watch online
+                      </a>
+                      <a class="pet__action-item" href="/">
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="12" cy="12" r="11.5" stroke="white" />
+                          <path
+                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                          />
+                        </svg>
+                        Donate
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div title="Alligator" class="main-slider__slide">
+                  <img
+                    class="main-slider__slide-thumb"
+                    src="./assets/images/main-pet-4.png"
+                    alt=""
+                  />
+                  <div class="pet__info">
+                    <p class="pet__description">
+                      Alligator’s name is Gena. He is 10 years old. Gena is
+                      from USA. He loves fish.
+                    </p>
+                    <div class="pet__action">
+                      <a
+                        class="pet__action-item pet__action-item_watch"
+                        href="./zoos/alligator.html"
+                      >
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 32 32"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="15.5" />
+                          <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                        </svg>
+                        watch online
+                      </a>
+                      <a class="pet__action-item" href="/">
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="12" cy="12" r="11.5" stroke="white" />
+                          <path
+                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                          />
+                        </svg>
+                        Donate
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div title="Fox" class="main-slider__slide">
+                  <img
+                    class="main-slider__slide-thumb"
+                    src="./assets/images/main-pet-6.png"
+                    alt=""
+                  />
+                  <div class="pet__info">
+                    <p class="pet__description">
+                      Fox’s name is .... He is * years old. ... is
+                      from .... He loves ....
+                    </p>
+                    <div class="pet__action">
+                      <a
+                        class="pet__action-item pet__action-item_watch"
+                        href="/"
+                      >
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 32 32"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="15.5" />
+                          <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                        </svg>
+                        watch online
+                      </a>
+                      <a class="pet__action-item" href="/">
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="12" cy="12" r="11.5" stroke="white" />
+                          <path
+                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                          />
+                        </svg>
+                        Donate
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div title="Sloth" class="main-slider__slide">
+                  <img
+                    class="main-slider__slide-thumb"
+                    src="./assets/images/main-pet-7.png"
+                    alt=""
+                  />
+                  <div class="pet__info">
+                    <p class="pet__description">
+                      Sloth’s name is .... He is * years old. ... is
+                      from .... He loves ....
+                    </p>
+                    <div class="pet__action">
+                      <a
+                        class="pet__action-item pet__action-item_watch"
+                        href="/"
+                      >
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 32 32"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="15.5" />
+                          <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                        </svg>
+                        watch online
+                      </a>
+                      <a class="pet__action-item" href="/">
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="12" cy="12" r="11.5" stroke="white" />
+                          <path
+                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                          />
+                        </svg>
+                        Donate
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div title="Elephant" class="main-slider__slide">
+                  <img
+                    class="main-slider__slide-thumb"
+                    src="./assets/images/main-pet-8.png"
+                    alt=""
+                  />
+                  <div class="pet__info">
+                    <p class="pet__description">
+                      Elephant’s name is .... He is * years old. ... is
+                      from .... He loves ....
+                    </p>
+                    <div class="pet__action">
+                      <a
+                        class="pet__action-item pet__action-item_watch"
+                        href="/"
+                      >
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 32 32"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="15.5" />
+                          <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                        </svg>
+                        watch online
+                      </a>
+                      <a class="pet__action-item" href="/">
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="12" cy="12" r="11.5" stroke="white" />
+                          <path
+                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                          />
+                        </svg>
+                        Donate
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div title="Leopard" class="main-slider__slide">
+                  <img
+                    class="main-slider__slide-thumb"
+                    src="./assets/images/main-pet-9.png"
+                    alt=""
+                  />
+                  <div class="pet__info">
+                    <p class="pet__description">
+                      Leopard’s name is .... He is * years old. ... is
+                      from .... He loves ....
+                    </p>
+                    <div class="pet__action">
+                      <a
+                        class="pet__action-item pet__action-item_watch"
+                        href="/"
+                      >
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 32 32"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="15.5" />
+                          <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                        </svg>
+                        watch online
+                      </a>
+                      <a class="pet__action-item" href="/">
+                        <svg
+                          class="pet__action-icon"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="12" cy="12" r="11.5" stroke="white" />
+                          <path
+                            d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                          />
+                        </svg>
+                        Donate
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__info main-slider__info">
+              <div class="slider__count">
+                <span class="slider__passed-count">02</span>
+                <span class="slider__amount">08</span>
+              </div>
+              <div class="slider__scroll">
+                <input
+                  type="range"
+                  min="1"
+                  max="8"
+                  value="2"
+                  class="slider__scroll-range"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section how-it-work">
+        <div class="section__content section__content_v-padding">
+          <h3 class="section__title">How it works?</h3>
+          <p class="section__description">
+            As a voice for wildlife, we are devastated by the impact of the 2020
+            Australian bushfires on precious species and their habitat, and we
+            are determined to assist in all aspects, including providing
+            veterinary support and raising much-needed emergency funds. Zoo
+            Online saves wildlife and inspires everyone to make conservation a
+            priority in their lives. Animals have the right to a pain-free and
+            happy life. They have equal claim to the resources of this planet,
+            and deserve a life of dignity and compassion.As a voice for
+            wildlife, we are devastated by the impact of the 2020 Australian
+            bushfires on precious species and their habitat.
+          </p>
+
+          <div class="slider">
+            <div class="slides-wrapper">
+              <div class="slides">
+                <img
+                  class="slide"
+                  src="./assets/images/how-it-work-1.png"
+                  alt=""
+                />
+                <img
+                  class="slide"
+                  src="./assets/images/how-it-work-2.png"
+                  alt=""
+                />
+                <img
+                  class="slide"
+                  src="./assets/images/how-it-work-3.png"
+                  alt=""
+                />
+                <img
+                  class="slide"
+                  src="./assets/images/how-it-work-4.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="slider__info">
+              <div class="slider__count">
+                <span class="slider__passed-count">01</span>
+                <span class="slider__amount">04</span>
+              </div>
+              <div class="slider__scroll">
+                <input
+                  type="range"
+                  min="1"
+                  max="1"
+                  value="1"
+                  class="slider__scroll-range"
+                />
+              </div>
+            </div>
+          </div>
+          <a
+            href="./zoos/panda.html"
+            class="button button_with-icon how-it-work__button button_cursor"
+          >
+            <img
+              class="button__icon"
+              src="./assets/icons/play-icon.svg"
+              alt=""
+            />
+            watch online
+          </a>
+        </div>
+      </section>
+      <section class="section section_dark points">
+        <div
+          class="section__content section__content_small section__content_points"
+        >
+          <div class="point">
+            <img class="point__img" src="./assets/icons/point-2.svg" alt="" />
+
+            <h4 class="point__title">What inspires us?</h4>
+            <p class="point__description">
+              As a voice for wildlife, we are devastated by the impact of the
+              2020 Australian bushfires on precious species and their habitat,
+              and we are determined to assist in all aspects.
+            </p>
+          </div>
+          <div class="point">
+            <img class="point__img" src="./assets/icons/point-3.svg" alt="" />
+            <h4 class="point__title">Our mission</h4>
+            <p class="point__description">
+              Zoo Online saves wildlife and inspires everyone to make
+              conservation a priority in their lives.
+            </p>
+          </div>
+          <div class="point">
+            <img class="point__img" src="./assets/icons/point-1.svg" alt="" />
+            <h4 class="point__title">What we believe in?</h4>
+            <p class="point__description">
+              Animals have the right to a pain-free and happy life. They have
+              equal claim to the resources of this planet, and deserve a life of
+              dignity and compassion.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section pets-in-zoo">
+        <div
+          class="section__content section__content_small section__content_v-padding"
+        >
+          <h3 class="section__title text_center">Pets in Zoo</h3>
+
+          <div class="slider" data-scrolled-items="4" data-slide-gap="30">
+            <div class="slider__content">
+              <button
+                class="slider__action slider__action_left"
+                value="-1"
+              ></button>
+              <button
+                class="slider__action slider__action_right"
+                value="1"
+              ></button>
+              <div class="slides-wrapper">
+                <div class="slides pets">
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-1.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Panda’s name is Bei Bei. He is 2 years old. Bei Bei is
+                        from China. He loves bamboos.
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="./zoos/panda.html"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-2.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Eagle’s name is Grif. He is 5 years old. Grif is from
+                        USA. He loves meat.
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="./zoos/eagle.html"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-3.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Gorilla’s name is Maugli. He is 8 years old. Maugli is
+                        from Africa. He loves bananas.
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="./zoos/gorilla.html"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-4.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Alligator’s name is Gena. He is 10 years old. Gena is
+                        from USA. He loves fish.
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="./zoos/alligator.html"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/main-pet-6.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Fox’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/main-pet-7.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Sloth’s name is .... He is * years old. ... is from
+                        .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/main-pet-8.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Elephant’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/main-pet-9.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Leopard’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-5.jpg"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Tiger’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-6.jpg"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Lion’s name is .... He is * years old. ... is from
+                        .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-7.jpg"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Zebra’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-8.jpg"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Elephant’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-1.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Panda’s name is Bei Bei. He is 2 years old. Bei Bei is
+                        from China. He loves bamboos.
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="./zoos/panda.html"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-2.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Eagle’s name is Grif. He is 5 years old. Grif is from
+                        USA. He loves meat.
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="./zoos/eagle.html"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/main-pet-6.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Fox’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/main-pet-7.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Sloth’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-5.jpg"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Tiger’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/main-pet-9.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Leopard’s name is .... He is * years old. ... is from
+                        .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-3.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Gorilla’s name is Maugli. He is 8 years old. Maugli is
+                        from Africa. He loves bananas.
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="./zoos/gorilla.html"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-4.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Alligator’s name is Gena. He is 10 years old. Gena is
+                        from USA. He loves fish.
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="./zoos/alligator.html"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-1.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Panda’s name is Bei Bei. He is 2 years old. Bei Bei is
+                        from China. He loves bamboos.
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="./zoos/panda.html"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-6.jpg"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Lion’s name is .... He is * years old. ... is from
+                        .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-7.jpg"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Zebra’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="./zoos/gorilla.html"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/main-pet-8.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Elephant’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/main-pet-9.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Leopard’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-2.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Eagle’s name is Grif. He is 5 years old. Grif is from
+                        USA. He loves meat.
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="./zoos/eagle.html"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/main-pet-6.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Fox’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-5.jpg"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Tiger’s name is .... He is * years old. ... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-7.jpg"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Zebra’s name is .... He is * years old. .... is
+                        from .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-3.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Gorilla’s name is Maugli. He is 8 years old. Maugli is
+                        from Africa. He loves bananas.
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="./zoos/gorilla.html"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/main-pet-7.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Sloth’s name is .... He is * years old. ... is from
+                        .... He loves ....
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="/"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide pet">
+                    <img
+                      class="pet__thumb"
+                      src="./assets/images/pet-4.png"
+                      alt=""
+                    />
+                    <div class="pet__info">
+                      <p class="pet__description">
+                        Alligator’s name is Gena. He is 10 years old. Gena is
+                        from USA. He loves fish.
+                      </p>
+                      <div class="pet__action">
+                        <a
+                          class="pet__action-item pet__action-item_watch"
+                          href="./zoos/alligator.html"
+                        >
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="16" cy="16" r="15.5" />
+                            <path d="M21 16L13.5 20.3301V11.6699L21 16Z" />
+                          </svg>
+                          watch online
+                        </a>
+                        <a class="pet__action-item" href="/">
+                          <svg
+                            class="pet__action-icon"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="11.5" stroke="white" />
+                            <path
+                              d="M14.1982 15.6602C14.1982 15.1621 14.04 14.752 13.7236 14.4297C13.4072 14.1016 12.8799 13.8086 12.1416 13.5508C11.4033 13.2871 10.8291 13.0439 10.4189 12.8213C9.05371 12.0889 8.37109 11.0049 8.37109 9.56934C8.37109 8.59668 8.66699 7.79687 9.25879 7.16992C9.85059 6.54297 10.6533 6.1709 11.667 6.05371V4.1377H13.0732V6.07129C14.0928 6.21777 14.8809 6.65137 15.4375 7.37207C15.9941 8.08691 16.2725 9.01855 16.2725 10.167H14.1455C14.1455 9.42871 13.9785 8.84863 13.6445 8.42676C13.3164 7.99902 12.8682 7.78516 12.2998 7.78516C11.7373 7.78516 11.2979 7.9375 10.9814 8.24219C10.665 8.54688 10.5068 8.9834 10.5068 9.55176C10.5068 10.0615 10.6621 10.4717 10.9727 10.7822C11.2891 11.0869 11.8223 11.377 12.5723 11.6523C13.3223 11.9277 13.9111 12.1826 14.3389 12.417C14.7666 12.6514 15.127 12.9209 15.4199 13.2256C15.7129 13.5244 15.9385 13.8701 16.0967 14.2627C16.2549 14.6553 16.334 15.1152 16.334 15.6426C16.334 16.6328 16.0293 17.4355 15.4199 18.0508C14.8164 18.666 13.9727 19.0293 12.8887 19.1406V20.8545H11.4912V19.1494C10.3311 19.0205 9.4375 18.6045 8.81055 17.9014C8.18945 17.1982 7.87891 16.2666 7.87891 15.1064H10.0146C10.0146 15.8447 10.1992 16.416 10.5684 16.8203C10.9434 17.2246 11.4707 17.4268 12.1504 17.4268C12.8184 17.4268 13.3252 17.2656 13.6709 16.9434C14.0225 16.6211 14.1982 16.1934 14.1982 15.6602Z"
+                            />
+                          </svg>
+                          Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__info">
+              <div class="slider__count">
+                <span class="slider__passed-count">01</span>
+                <span class="slider__amount">08</span>
+              </div>
+              <div class="slider__scroll">
+                <input
+                  type="range"
+                  min="1"
+                  max="1"
+                  value="1"
+                  class="slider__scroll-range"
+                />
+              </div>
+            </div>
+          </div>
+
+          <a href="./map/map.html" class="button button_center button_cursor">
+            Choose your favorite
+          </a>
+        </div>
+      </section>
+      <section class="section section_dark pay-and-feed">
+        <div
+          class="section__content section__content_small section__content_v-padding"
+        >
+          <h3 class="section__title text_center">Pay and feed</h3>
+          <p class="section__description text_center">
+            The opportunity to easily and naturally (but as often as possible)
+            donate to the needs of animals that you like.
+          </p>
+          <div class="pay-steps">
+            <div class="pay-step">
+              <img
+                class="pay-step__icon"
+                src="./assets/icons/card-icon.svg"
+                alt=""
+              />
+              <span class="pay-step__label">You pay with a VISA card</span>
+            </div>
+            <img class="pay-arrow" src="./assets/icons/arrow.svg" alt="" />
+            <img
+              class="pay-arrow-min"
+              src="./assets/icons/arrow-min.svg"
+              alt=""
+            />
+            <div class="pay-step">
+              <img
+                class="pay-step__icon"
+                src="./assets/icons/zoo-icon.svg"
+                alt=""
+              />
+              <span class="pay-step__label">Payment goes to the Zoo</span>
+            </div>
+            <img class="pay-arrow" src="./assets/icons/arrow.svg" alt="" />
+            <img
+              class="pay-arrow-min"
+              src="./assets/icons/arrow-min.svg"
+              alt=""
+            />
+            <div class="pay-step">
+              <img
+                class="pay-step__icon"
+                src="./assets/icons/panda-icon.svg"
+                alt=""
+              />
+              <span class="pay-step__label">Panda gets the bamboo</span>
+            </div>
+          </div>
+          <button class="button button_center button_cursor">donate</button>
+        </div>
+      </section>
+      <section class="section testimonials">
+        <div
+          class="section__content section__content_small section__content_v-padding"
+        >
+          <h3 class="section__title text_center">Testimonials</h3>
+
+          <div class="slider" data-scrolled-items="2" data-slide-gap="30">
+            <div class="slider__content">
+              <button
+                class="slider__action slider__action_left"
+                value="-1"
+              ></button>
+              <button
+                class="slider__action slider__action_right"
+                value="1"
+              ></button>
+              <div class="slides-wrapper">
+                <div class="slides">
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/icons/user-icon.svg" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Nastya Sidorova</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/images/user-thumb.png" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Vlad Kim</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/images/user-thumb.png" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Vlad Kim</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/icons/user-icon.svg" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Nastya Sidorova</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/icons/user-icon.svg" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Nastya Sidorova</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/images/user-thumb.png" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Vlad Kim</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/images/user-thumb.png" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Vlad Kim</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/icons/user-icon.svg" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Nastya Sidorova</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/icons/user-icon.svg" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Nastya Sidorova</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/images/user-thumb.png" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Vlad Kim</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/images/user-thumb.png" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Vlad Kim</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/icons/user-icon.svg" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Nastya Sidorova</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/icons/user-icon.svg" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Nastya Sidorova</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/images/user-thumb.png" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Vlad Kim</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/images/user-thumb.png" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Vlad Kim</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                  <div class="slide testimonial">
+                    <div class="testimonial__thumb">
+                      <img src="./assets/icons/user-icon.svg" alt="" />
+                    </div>
+
+                    <div class="testimonial__title">Nastya Sidorova</div>
+                    <p class="testimonial__description">
+                      As a voice for wildlife, we are devastated by the impact
+                      of the 2020 Australian bushfires on precious species and
+                      their habitat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__info">
+              <div class="slider__count">
+                <span class="slider__passed-count">01</span>
+                <span class="slider__amount">04</span>
+              </div>
+              <div class="slider__scroll">
+                <input
+                  type="range"
+                  min="1"
+                  max="1"
+                  value="1"
+                  class="slider__scroll-range"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button class="button button_center button_cursor">
+            Leave feedback
+          </button>
+        </div>
+      </section>
+      <section class="section section_dark map">
+        <div
+          class="section__content section__content_small section__content_v-padding"
+        >
+          <h3 class="section__title text_center">Map</h3>
+          <div class="map-box">
+            <img
+              class="map-box__map-preview"
+              src="./assets/images/map.png"
+              alt=""
+            />
+            <img
+              class="map-box__map-preview map-box__map-preview_dark"
+              src="./assets/images/map-dark.png"
+              alt=""
+            />
+
+            <div class="map-legend">
+              <div class="map-legend__item map-legend__item_gorilla">
+                <img
+                  class="map-legend__item-img"
+                  src="./assets/images/map-animal-1.png"
+                  alt=""
+                />
+                <div class="tooltip tooltip_bottom tooltip_right">
+                  <img
+                    class="tooltip__img"
+                    src="./assets/images/map-pet-10.png"
+                    alt=""
+                  />
+                  <div class="tooltip__info">
+                    <div class="tooltip__title">West End Bald Eagle</div>
+                    <div class="tooltip__description">
+                      <b>Region:</b> on an island near Los Angeles
+                    </div>
+                    <div class="tooltip__description">
+                      <b>Population:</b> more than 270 pairs in 2013
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="map-legend__item map-legend__item_alligator">
+                <img
+                  class="map-legend__item-img"
+                  src="./assets/images/map-animal-2.png"
+                  alt=""
+                />
+                <div class="tooltip tooltip_bottom tooltip_left">
+                  <img
+                    class="tooltip__img"
+                    src="./assets/images/map-animal-2.png"
+                    alt=""
+                  />
+                  <div class="tooltip__info">
+                    <div class="tooltip__title">West End Bald Eagle</div>
+                    <div class="tooltip__description">
+                      <b>Region:</b> on an island near Los Angeles
+                    </div>
+                    <div class="tooltip__description">
+                      <b>Population:</b> more than 270 pairs in 2013
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="map-legend__item map-legend__item_eagle">
+                <img
+                  class="map-legend__item-img"
+                  src="./assets/images/map-animal-3.png"
+                  alt=""
+                />
+
+                <div class="tooltip tooltip_bottom tooltip_left">
+                  <img
+                    class="tooltip__img"
+                    src="./assets/images/map-pet-9.png"
+                    alt=""
+                  />
+                  <div class="tooltip__info">
+                    <div class="tooltip__title">West End Bald Eagle</div>
+                    <div class="tooltip__description">
+                      <b>Region:</b> on an island near Los Angeles
+                    </div>
+                    <div class="tooltip__description">
+                      <b>Population:</b> more than 270 pairs in 2013
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="map-legend__item map-legend__item_panda">
+                <img
+                  class="map-legend__item-img"
+                  src="./assets/images/map-animal-4.png"
+                  alt=""
+                />
+                <div class="tooltip tooltip_bottom tooltip_right">
+                  <img
+                    class="tooltip__img"
+                    src="./assets/images/map-animal-4.png"
+                    alt=""
+                  />
+                  <div class="tooltip__info">
+                    <div class="tooltip__title">West End Bald Eagle</div>
+                    <div class="tooltip__description">
+                      <b>Region:</b> on an island near Los Angeles
+                    </div>
+                    <div class="tooltip__description">
+                      <b>Population:</b> more than 270 pairs in 2013
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            href="./zoos/panda.html"
+            class="button button_with-icon button_center button_cursor"
+          >
+            <img
+              class="button__icon"
+              src="./assets/icons/play-icon.svg"
+              alt=""
+            />
+            watch online
+          </a>
+        </div>
+      </section>
+      <footer class="footer section" id="contact-us">
+        <div class="section__content">
+          <div class="footer__content">
+            <div class="footer__head">
+              <div class="footer__nav-box">
+                <div class="logo logo_footer footer__logo">
+                  <a
+                    class="logo__link"
+                    href="https://rolling-scopes-school.github.io/dashaostrikova-JSFE2021Q1/online-zoo/"
+                    ><span>zoo</span>online
+                  </a>
+                </div>
+                <nav class="footer-nav">
+                  <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                      <a
+                        class="footer-nav__link"
+                        href="https://rolling-scopes-school.github.io/dashaostrikova-JSFE2021Q1/online-zoo/"
+                        >About</a
+                      >
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="./zoos/panda.html"
+                        >Zoos</a
+                      >
+                    </li>
+                    <li class="footer-nav__item">
+                      <a class="footer-nav__link" href="map/map.html">Map</a>
+                    </li>
+                    <li class="footer-nav__item">
+                      <a
+                        class="footer-nav__link"
+                        href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1"
+                        >Design</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <button class="button button_cursor button_footer">
+                donate for volunteers
+              </button>
+            </div>
+            <div class="footer__form">
+              <form action="" class="contact-us">
+                <div class="contact-us__title">Contact us</div>
+                <div class="contact-us__field-box contact-us__field-name">
+                  <input
+                    required
+                    class="contact-us__field"
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                  />
+                  <label class="contact-us__label">Name</label>
+                </div>
+                <div class="contact-us__field-box contact-us__field-email">
+                  <input
+                    required
+                    class="contact-us__field"
+                    placeholder="Email"
+                    type="email"
+                    name="email"
+                  />
+                  <label class="contact-us__label">Email</label>
+                </div>
+                <div class="contact-us__field-box contact-us__field-textarea">
+                  <fieldset class="contact-us__fieldset">
+                    <legend
+                      class="contact-us__label contact-us__label_textarea contact-us__label_sub"
+                    >
+                      Please enter your message
+                    </legend>
+                    <textarea
+                      required
+                      maxlength="280"
+                      class="contact-us__textarea"
+                      name="message"
+                    ></textarea>
+                  </fieldset>
+                </div>
+                <div class="contact-us__ckeckbox-box">
+                  <label
+                    class="contact-us__label contact-us__label_checkbox contact-us__label_sub"
+                  >
+                    <input
+                      required
+                      class="contact-us__ckeckbox"
+                      type="checkbox"
+                      name="agree"
+                    />
+                    <span class="contact-us__ckeckbox-label">
+                      I agree to the processing of Personal Data
+                    </span>
+                  </label>
+                </div>
+                <button class="contact-us__send" type="submit">
+                  SEND
+                  <svg
+                    class="contact-us__send-icon"
+                    viewBox="0 0 108 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M107.707 8.70711C108.098 8.31658 108.098 7.68342 107.707 7.29289L101.343 0.928932C100.953 0.538408 100.319 0.538408 99.9289 0.928932C99.5384 1.31946 99.5384 1.95262 99.9289 2.34315L105.586 8L99.9289 13.6569C99.5384 14.0474 99.5384 14.6805 99.9289 15.0711C100.319 15.4616 100.953 15.4616 101.343 15.0711L107.707 8.70711ZM0 9L107 9V7L0 7L0 9Z"
+                    />
+                  </svg>
+                </button>
+              </form>
+              <div class="company">
+                <div class="company__name">ZOO Online Centre</div>
+                <address class="company__address">
+                  132, Address District, Street <br />
+                  Open Daily 10:00 am - 5:00 pm
+                </address>
+                <div class="company__contacts">
+                  <a href="tel:7021633433" class="company__contact"
+                    >T(702) 163-3433</a
+                  >
+                  <a
+                    href="mailto:zoo.online@gmail.com"
+                    class="company__contact"
+                  >
+                    zoo.online@gmail.com
+                  </a>
+                </div>
+                <ul class="social footer__social">
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      target="_blank"
+                      href="https://www.instagram.com/"
+                    >
+                      <svg
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.75 0H6.25C2.79875 0 0 2.79875 0 6.25V13.75C0 17.2013 2.79875 20 6.25 20H13.75C17.2013 20 20 17.2013 20 13.75V6.25C20 2.79875 17.2013 0 13.75 0ZM18.125 13.75C18.125 16.1625 16.1625 18.125 13.75 18.125H6.25C3.8375 18.125 1.875 16.1625 1.875 13.75V6.25C1.875 3.8375 3.8375 1.875 6.25 1.875H13.75C16.1625 1.875 18.125 3.8375 18.125 6.25V13.75Z"
+                        />
+                        <path
+                          d="M10 5C7.23875 5 5 7.23875 5 10C5 12.7613 7.23875 15 10 15C12.7613 15 15 12.7613 15 10C15 7.23875 12.7613 5 10 5ZM10 13.125C8.2775 13.125 6.875 11.7225 6.875 10C6.875 8.27625 8.2775 6.875 10 6.875C11.7225 6.875 13.125 8.27625 13.125 10C13.125 11.7225 11.7225 13.125 10 13.125Z"
+                        />
+                        <path
+                          d="M15.3752 5.29148C15.7432 5.29148 16.0415 4.99319 16.0415 4.62523C16.0415 4.25727 15.7432 3.95898 15.3752 3.95898C15.0073 3.95898 14.709 4.25727 14.709 4.62523C14.709 4.99319 15.0073 5.29148 15.3752 5.29148Z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      target="_blank"
+                      href="https://twitter.com/"
+                    >
+                      <svg
+                        viewBox="0 0 20 17"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20 1.92375C19.2563 2.25 18.4637 2.46625 17.6375 2.57125C18.4875 2.06375 19.1363 1.26625 19.4412 0.305C18.6488 0.7775 17.7738 1.11125 16.8412 1.2975C16.0887 0.49625 15.0162 0 13.8462 0C11.5763 0 9.74875 1.8425 9.74875 4.10125C9.74875 4.42625 9.77625 4.73875 9.84375 5.03625C6.435 4.87 3.41875 3.23625 1.3925 0.7475C1.03875 1.36125 0.83125 2.06375 0.83125 2.82C0.83125 4.24 1.5625 5.49875 2.6525 6.2275C1.99375 6.215 1.3475 6.02375 0.8 5.7225C0.8 5.735 0.8 5.75125 0.8 5.7675C0.8 7.76 2.22125 9.415 4.085 9.79625C3.75125 9.8875 3.3875 9.93125 3.01 9.93125C2.7475 9.93125 2.4825 9.91625 2.23375 9.86125C2.765 11.485 4.2725 12.6788 6.065 12.7175C4.67 13.8088 2.89875 14.4662 0.98125 14.4662C0.645 14.4662 0.3225 14.4513 0 14.41C1.81625 15.5813 3.96875 16.25 6.29 16.25C13.835 16.25 17.96 10 17.96 4.5825C17.96 4.40125 17.9538 4.22625 17.945 4.0525C18.7588 3.475 19.4425 2.75375 20 1.92375Z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      target="_blank"
+                      href="https://www.youtube.com/"
+                    >
+                      <svg
+                        viewBox="0 0 20 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19.15 1.575C18.6075 0.61 18.0188 0.4325 16.82 0.365C15.6225 0.28375 12.6112 0.25 10.0025 0.25C7.38875 0.25 4.37625 0.28375 3.18 0.36375C1.98375 0.4325 1.39375 0.60875 0.84625 1.575C0.2875 2.53875 0 4.19875 0 7.12125C0 7.12375 0 7.125 0 7.125C0 7.1275 0 7.12875 0 7.12875V7.13125C0 10.0413 0.2875 11.7137 0.84625 12.6675C1.39375 13.6325 1.9825 13.8075 3.17875 13.8888C4.37625 13.9588 7.38875 14 10.0025 14C12.6112 14 15.6225 13.9587 16.8212 13.89C18.02 13.8087 18.6087 13.6338 19.1513 12.6688C19.715 11.715 20 10.0425 20 7.1325C20 7.1325 20 7.12875 20 7.12625C20 7.12625 20 7.12375 20 7.1225C20 4.19875 19.715 2.53875 19.15 1.575ZM7.5 10.875V3.375L13.75 7.125L7.5 10.875Z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      target="_blank"
+                      href="https://vk.com/"
+                    >
+                      <svg
+                        viewBox="0 0 20 12"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19.8217 10.1784C19.768 10.0883 19.4355 9.36579 17.8353 7.88068C16.1602 6.32557 16.3852 6.57809 18.4029 3.88914C19.6317 2.25152 20.123 1.25145 19.9692 0.823916C19.823 0.416387 18.9192 0.523894 18.9192 0.523894L15.9139 0.541396C15.9139 0.541396 15.6914 0.511393 15.5252 0.610151C15.3639 0.707658 15.2601 0.932674 15.2601 0.932674C15.2601 0.932674 14.7839 2.20027 14.1488 3.27785C12.81 5.55176 12.2737 5.67177 12.0549 5.53051C11.5461 5.20174 11.6736 4.20792 11.6736 3.50286C11.6736 1.29895 12.0074 0.380134 11.0223 0.142616C10.6948 0.0638606 10.4548 0.0113567 9.61848 0.00260608C8.54591 -0.00864474 7.63709 0.00635635 7.1233 0.257625C6.78078 0.425137 6.51701 0.798915 6.67827 0.820166C6.87703 0.846418 7.32707 0.941425 7.56583 1.26645C7.87461 1.68523 7.86336 2.6278 7.86336 2.6278C7.86336 2.6278 8.04087 5.22174 7.44958 5.54426C7.0433 5.76553 6.487 5.31425 5.29317 3.25034C4.68187 2.19402 4.21934 1.02518 4.21934 1.02518C4.21934 1.02518 4.13058 0.807665 3.97182 0.691407C3.77931 0.550146 3.50929 0.505143 3.50929 0.505143L0.651577 0.522644C0.651577 0.522644 0.222795 0.535146 0.0652839 0.721409C-0.0747264 0.887671 0.054033 1.2302 0.054033 1.2302C0.054033 1.2302 2.2917 6.46433 4.82438 9.10327C7.1483 11.5222 9.786 11.3634 9.786 11.3634H10.9811C10.9811 11.3634 11.3424 11.3234 11.5261 11.1247C11.6961 10.9422 11.6899 10.5996 11.6899 10.5996C11.6899 10.5996 11.6661 8.99577 12.4112 8.7595C13.145 8.52698 14.0876 10.3096 15.0864 10.9959C15.8414 11.5147 16.4152 11.4009 16.4152 11.4009L19.0867 11.3634C19.0867 11.3634 20.4843 11.2772 19.8217 10.1784Z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="wrapper-button">
+                  <button
+                    class="button button_footer button_cursor button_1200"
+                  >
+                    donate for volunteers
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <div class="copyright__text">©Noora Sagnayeva</div>
+            <div class="copyright__text">©RSSchool and ©Yem Digital - 2021</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./assets/scripts/Slider.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+.pet-page {
+  background: var(--inner-page-bg);
+}
+
+.pet-page .slider {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 150px;
+  padding: 45px 0;
+}
+
+.pet-page .slide_pets {
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.slide_pet.active {
+  margin: 20px 0;
+}
+
+.pet-page .slider__content {
+  width: 108px;
+}
+
+.pet-page .slider__action {
+  background: url(../assets/icons/slider-arrow.svg) no-repeat center center;
+  top: initial;
+  right: initial;
+  left: 50%;
+}
+
+.pet-page .slider__action_left {
+  transform: translateX(-50%) rotate(180deg);
+  top: -45px;
+}
+
+.pet-page .slider__action_right {
+  bottom: -45px;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.slider__action:hover {
+  background: url(../assets/icons/slider-arrow_hovered.svg) no-repeat center
+    center;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.slider__action_right:hover {
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  bottom: 0;
+}
+
+.page__content {
+  display: flex;
+}
+
+.page__slider {
+  width: 790px;
+  margin-right: 35px;
+}
+
+.page__text {
+}
+
+.button_feed {
+  width: 195px;
+}
+
+.preview-slider__slides {
+  height: 440px;
+  margin-bottom: 30px;
+}
+
+.preview-slider__slide {
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+}
+
+.preview-slider__slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.preview-slider__slides iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.preview-slider__controls {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.preview-slider__controls iframe {
+  height: 140px;
+  width: 245px;
+}
+
+.preview-slider__buttons {
+  text-align: center;
+}
+
+.label-button {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background: #c4c4c4;
+  border-radius: 50%;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.radio-button {
+  display: none;
+}
+
+.radio-button:checked + .label-button {
+  width: 11px;
+  height: 11px;
+  background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+}
+
+.pet-info {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+
+.pet-info__row {
+  margin-bottom: 10px;
+}
+
+.pet-info__label {
+  margin-bottom: 10px;
+  color: var(--base-text-color);
+}
+
+.pet-info__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--sub-text-color);
+}
+
+.section__title {
+  margin-bottom: 40px;
+}
+
+.section__content_inner-page {
+  padding: 60px 0 95px;
+}

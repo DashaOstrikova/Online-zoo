@@ -1,0 +1,413 @@
+.container_landing {
+  overflow: hidden;
+}
+
+.section_main {
+  background: url("../assets/images/main.png") no-repeat top center;
+  background-size: cover;
+  height: 940px;
+}
+
+.main {
+}
+
+.main .section__content {
+  padding-top: 206px;
+}
+
+.main__social {
+  position: absolute;
+  bottom: 96px;
+}
+
+.main__label {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.main__title {
+  font-weight: 900;
+  font-size: 89px;
+  line-height: 104px;
+  color: var(--main-text-color);
+  margin-bottom: 37px;
+}
+
+.how-it-work .section__content {
+  width: 790px;
+}
+
+.how-it-work__button {
+  margin: 0 auto;
+}
+
+.points .section__content {
+  display: flex;
+  gap: 30px;
+}
+
+.section__content_points {
+  padding: 100px 0 132px;
+}
+
+.point {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.point__img {
+  width: 80px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.point__title {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: var(--base-text-color);
+}
+
+.point__description {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--sub-text-color);
+}
+
+.pets {
+  display: flex;
+  overflow: hidden;
+  gap: 30px;
+}
+
+.pet {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.pet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.pet__thumb {
+  width: 100%;
+}
+
+.pet__info {
+  transform: translateY(100%);
+  padding: 0 60px 45px 20px;
+  transition: 0.3s;
+}
+
+.pet__description {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--white-color);
+  margin-bottom: 14px;
+}
+
+.pet__action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pet__action-item {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  stroke: #ffffff;
+}
+
+.pet__action-item path {
+  fill: #ffffff;
+}
+
+.pet__action-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.pet__action-item_watch {
+  color: #4bd8b5;
+  stroke: #4bd8b5;
+  fill: none;
+}
+
+.pet:hover::before {
+  opacity: 0.3;
+}
+
+.pet:hover .pet__info {
+  transform: translateY(-100%);
+}
+
+.pay-and-feed .section__description {
+  margin-bottom: 90px;
+}
+
+.pay-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.pay-step {
+  width: 245px;
+  height: 245px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px 55px;
+}
+
+.pay-step__icon {
+  z-index: 1;
+  margin-bottom: 18px;
+}
+
+.pay-step__label {
+  z-index: 1;
+  color: var(--base-text-color);
+}
+
+.pay-step::before,
+.pay-step::after {
+  content: "";
+  background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.pay-step::after {
+  background: var(--dark-section-bg);
+  border-radius: 50%;
+  overflow: hidden;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+}
+
+.pay-arrow-min {
+  display: none;
+}
+
+.testimonials .section__title {
+  margin-bottom: 60px;
+}
+
+.testimonials .slides {
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.testimonial {
+  background: var(--testimonials-card-bg);
+  box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
+  border-radius: 5px;
+  padding: 50px 70px;
+  height: 310px;
+  width: 590px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial__thumb {
+  width: 68px;
+  height: 68px;
+  border: 1px solid #bdbdbd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17px;
+}
+
+.testimonial__title {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 17px;
+  color: var(--base-text-color);
+}
+
+.testimonial__description {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--sub-text-color);
+}
+
+.main-slider {
+  position: absolute;
+  left: 826px;
+  top: 495px;
+  right: 0;
+  max-width: 620px;
+}
+
+.main-slider__content {
+  display: flex;
+  gap: 46px;
+  width: 1000%;
+  height: 283px;
+  position: relative;
+}
+
+.main-slider__slide-list {
+  display: flex;
+  gap: 30px;
+  margin-left: 210px;
+  transition: 0.3s;
+}
+
+.main-slider__slide {
+  width: 140px;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.main-slider__slide:hover {
+  transform: scale(1.27);
+  cursor: pointer;
+}
+
+.main-slider__slide-thumb {
+  width: 100%;
+}
+
+.main-slider__slide.hide {
+  opacity: 0;
+}
+
+.main-slider__slide.active {
+  width: 245px;
+  transform: translateY(-90px);
+}
+
+.main-slider__slide.active:hover {
+  transform: translateY(-90px);
+  cursor: default;
+}
+
+.main-slider__slide .pet__info {
+  display: none;
+  transform: translateY(-100%);
+  padding: 0 25px 35px;
+}
+
+.main-slider__slide.active .pet__info {
+  display: block;
+}
+
+.main-slider .slider__passed-count {
+  color: var(--main-text-color);
+}
+
+.main-slider .slider__scroll-range::-webkit-slider-thumb {
+  background: var(--main-text-color);
+}
+
+.main-slider__bg-line {
+  width: 100%;
+  height: 1px;
+  background: var(--main-text-color);
+  position: absolute;
+  top: 100px;
+  left: -130px;
+}
+
+.bg-point:before,
+.bg-point::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.bg-point:before {
+  height: 5px;
+  width: 5px;
+  background: var(--main-text-color);
+  border-radius: 50%;
+  top: -2px;
+  left: -2px;
+}
+
+.bg-point::after {
+  width: 13px;
+  height: 13px;
+  border: 1px solid var(--main-text-color);
+  border-radius: 50%;
+  top: -7px;
+  left: -7px;
+}
+
+.bg-point_1:before {
+  left: 240px;
+}
+
+.bg-point_1::after {
+  left: 235px;
+}
+
+.bg-point_2:before {
+  left: 463.5px;
+}
+
+.bg-point_2::after {
+  left: 458.6px;
+}
+
+.bg-point_3:before {
+  left: 685px;
+}
+
+.bg-point_3::after {
+  left: 680px;
+}
+
+.bg-point_4:before {
+  left: 857px;
+}
+
+.bg-point_4::after {
+  left: 852px;
+}
+
+.bg-point_5:before {
+  left: 1023px;
+}
+
+.bg-point_5::after {
+  left: 1018px;
+}

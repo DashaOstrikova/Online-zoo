@@ -1,0 +1,39 @@
+.map-page {
+  background: var(--inner-page-bg);
+}
+
+.map-page .section__title {
+  margin-bottom: 20px;
+}
+
+.map-page .section__description {
+  margin: 0 auto 75px;
+  max-width: 790px;
+}
+
+.map-slider {
+  margin-bottom: 80px;
+  padding: 0 60px;
+}
+
+.map-box {
+  margin-bottom: 50px;
+}
+
+.map-legend__item_panda {
+  top: 100px;
+  left: 900px;
+}
+
+.slider__content {
+  margin-bottom: 50px;
+}
+
+.map-page .slides-wrapper {
+  padding: 25px 25px 0;
+  margin: -25px -25px 0;
+}
+
+.map-watch-online.pointer-events-none {
+  pointer-events: none;
+}
